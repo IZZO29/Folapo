@@ -8,7 +8,7 @@ export default function MyOrder() {
 
     const fetchMyOrder = async () => {
         console.log(localStorage.getItem('userEmail'))
-        await fetch("https://folapo.onrender.com/api/myOrderData", {
+        await fetch("https://folapooo.onrender.com/api/myOrderData", {
             // credentials: 'include',
             // Origin:"http://localhost:3000/login",
             method: 'POST',
