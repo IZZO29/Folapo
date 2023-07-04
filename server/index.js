@@ -9,14 +9,6 @@ app.use(cors());
 //mongoose.connect('mongodb://Folapo:Novasquad29@ac-qbujkez-shard-00-00.ir2w7k0.mongodb.net:27017,ac-qbujkez-shard-00-01.ir2w7k0.mongodb.net:27017,ac-qbujkez-shard-00-02.ir2w7k0.mongodb.net:27017/Folapo?ssl=true&replicaSet=atlas-lznhwz-shard-0&authSource=admin&retryWrites=true&w=majority')
 
 
-app.use((req,res,next)=>{
-  res.setHeader("Access-Control-Allow-Origin","https://graceful-capybara-13e1be.netlify.app/");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
-  next();
-})
 
 mongoDB;
 app.get('/', (req, res) => {
