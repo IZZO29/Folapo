@@ -6,7 +6,7 @@ const cors = require('cors')
 const path = require('path')
 app.use(cors(
   {
-    origin: ["folapo.vercel.app"],
+    origin: ["https://graceful-capybara-13e1be.netlify.app/"],
     methods: ["POST", "GET"],
     credentials: true
   }
@@ -16,7 +16,7 @@ mongoose.connect('mongodb://Folapo:Novasquad29@ac-qbujkez-shard-00-00.ir2w7k0.mo
 
 
 app.use((req,res,next)=>{
-  res.setHeader("Access-Control-Allow-Origin","http://localhost:3000");
+  res.setHeader("Access-Control-Allow-Origin","https://graceful-capybara-13e1be.netlify.app/");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
